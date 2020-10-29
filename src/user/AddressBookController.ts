@@ -1,4 +1,4 @@
-import { isValidAddress, toChecksumAddress } from 'ethereumjs-util';
+import { isValidAddress, toChecksumAddress } from '@wanchainmask/wanchainjs-util';
 import { normalizeEnsName } from '../util';
 import BaseController, { BaseConfig, BaseState } from '../BaseController';
 

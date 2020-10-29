@@ -1,4 +1,4 @@
-import { toChecksumAddress } from 'ethereumjs-util';
+import { toChecksumAddress } from '@wanchainmask/wanchainjs-util';
 
 import EnsController from '../src/third-party/EnsController';
 

@@ -5,9 +5,7 @@ import CurrencyRateController from '../src/assets/CurrencyRateController';
 
 describe('CurrencyRateController', () => {
   beforeEach(() => {
-    fetchMock
-      .mock('*', () => new Response(JSON.stringify({ USD: 1337 })))
-      .spy();
+    fetchMock.mock('*', () => new Response(JSON.stringify({ USD: 1337 }))).spy();
   });
 
   afterEach(() => {
@@ -20,7 +18,7 @@ describe('CurrencyRateController', () => {
       conversionDate: 0,
       conversionRate: 0,
       currentCurrency: 'usd',
-      nativeCurrency: 'ETH',
+      nativeCurrency: 'WAN',
     });
   });
 
@@ -30,7 +28,7 @@ describe('CurrencyRateController', () => {
       currentCurrency: 'usd',
       disabled: false,
       interval: 180000,
-      nativeCurrency: 'ETH',
+      nativeCurrency: 'WAN',
     });
   });
 
@@ -41,7 +39,7 @@ describe('CurrencyRateController', () => {
       currentCurrency: 'rep',
       disabled: false,
       interval: 180000,
-      nativeCurrency: 'ETH',
+      nativeCurrency: 'WAN',
     });
   });
 

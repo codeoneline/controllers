@@ -1,4 +1,4 @@
-import { toChecksumAddress } from 'ethereumjs-util';
+import { toChecksumAddress } from '@wanchainmask/wanchainjs-util';
 import BaseController, { BaseConfig, BaseState, Listener } from '../BaseController';
 import PreferencesController from '../user/PreferencesController';
 import { Transaction } from '../transaction/TransactionController';
@@ -9,7 +9,7 @@ const sigUtil = require('eth-sig-util');
 const Keyring = require('eth-keyring-controller');
 const { Mutex } = require('await-semaphore');
 const Wallet = require('ethereumjs-wallet');
-const ethUtil = require('ethereumjs-util');
+const ethUtil = require('@wanchainmask/wanchainjs-util');
 const importers = require('ethereumjs-wallet/thirdparty');
 
 const privates = new WeakMap();

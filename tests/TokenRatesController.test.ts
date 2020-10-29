@@ -50,7 +50,7 @@ describe('TokenRatesController', () => {
     expect(controller.config).toEqual({
       disabled: false,
       interval: 180000,
-      nativeCurrency: 'eth',
+      nativeCurrency: 'wan',
       tokens: [],
     });
   });

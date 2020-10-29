@@ -1,4 +1,4 @@
-import { toChecksumAddress } from 'ethereumjs-util';
+import { toChecksumAddress } from '@wanchainmask/wanchainjs-util';
 import BaseController, { BaseConfig, BaseState } from '../BaseController';
 import { ContactEntry } from './AddressBookController';
 

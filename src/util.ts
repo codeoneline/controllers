@@ -1,4 +1,4 @@
-import { addHexPrefix, isValidAddress, bufferToHex } from 'ethereumjs-util';
+import { addHexPrefix, isValidAddress, bufferToHex } from '@wanchainmask/wanchainjs-util';
 import { Transaction, FetchAllOptions } from './transaction/TransactionController';
 import { MessageParams } from './message-manager/MessageManager';
 import { PersonalMessageParams } from './message-manager/PersonalMessageManager';
@@ -7,10 +7,10 @@ import { Token } from './assets/TokenRatesController';
 
 const sigUtil = require('eth-sig-util');
 const jsonschema = require('jsonschema');
-const { BN, stripHexPrefix } = require('ethereumjs-util');
+const { BN, stripHexPrefix } = require('@wanchainmask/wanchainjs-util');
 const ensNamehash = require('eth-ens-namehash');
 
-const hexRe = /^[0-9A-Fa-f]+$/ug;
+const hexRe = /^[0-9A-Fa-f]+$/gu;
 
 const NORMALIZERS: { [param in keyof Transaction]: any } = {
   data: (data: string) => addHexPrefix(data),

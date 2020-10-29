@@ -1,4 +1,4 @@
-import { toChecksumAddress } from 'ethereumjs-util';
+import { toChecksumAddress } from '@wanchainmask/wanchainjs-util';
 import BaseController, { BaseConfig, BaseState } from '../BaseController';
 import { safelyExecute, handleFetch } from '../util';
 import AssetsController from './AssetsController';
@@ -92,7 +92,7 @@ export class TokenRatesController extends BaseController<TokenRatesConfig, Token
     this.defaultConfig = {
       disabled: true,
       interval: 180000,
-      nativeCurrency: 'eth',
+      nativeCurrency: 'wan',
       tokens: [],
     };
     this.defaultState = { contractExchangeRates: {} };

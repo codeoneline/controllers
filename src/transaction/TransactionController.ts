@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import { addHexPrefix, bufferToHex } from 'ethereumjs-util';
+import { addHexPrefix, bufferToHex } from '@wanchainmask/wanchainjs-util';
 import BaseController, { BaseConfig, BaseState } from '../BaseController';
 import NetworkController from '../network/NetworkController';
 
@@ -19,7 +19,7 @@ const MethodRegistry = require('eth-method-registry');
 const EthQuery = require('eth-query');
 const Transaction = require('ethereumjs-tx');
 const random = require('uuid/v1');
-const { BN } = require('ethereumjs-util');
+const { BN } = require('@wanchainmask/wanchainjs-util');
 const { Mutex } = require('await-semaphore');
 
 /**
